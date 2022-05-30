@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:localmarket_adminpanel/inner_screens/all_orders_screen.dart';
+import 'package:localmarket_adminpanel/inner_screens/all_products.dart';
 import 'package:localmarket_adminpanel/providers/dark_theme_provider.dart';
 import 'package:localmarket_adminpanel/services/utils.dart';
 import 'package:localmarket_adminpanel/widgets/text_widget.dart';
@@ -21,7 +23,7 @@ class _SideMenuState extends State<SideMenu> {
   Widget build(BuildContext context) {
     final theme = Utils(context).getTheme;
     final themeState = Provider.of<DarkThemeProvider>(context);
-  
+
     final color = Utils(context).color;
     return Drawer(
       child: ListView(
@@ -43,15 +45,23 @@ class _SideMenuState extends State<SideMenu> {
             icon: Icons.home_filled,
           ),
           DrawerListTile(
-            title: "View all product",
+            title: "View all products",
             press: () {
-             
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AllProductsScreen()));
             },
             icon: Icons.store,
           ),
           DrawerListTile(
-            title: "View all order",
-            press: () {},
+            title: "View all orders",
+            press: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AllOrdersScreen()));
+            },
             icon: IconlyBold.bag_2,
           ),
           SwitchListTile(
