@@ -9,7 +9,7 @@ class Styles {
       primaryColor: Colors.blue,
       colorScheme: ThemeData().colorScheme.copyWith(
             secondary:
-                isDarkTheme ? const Color(0xFF1a1f3c) : const Color(0xFFE8FDFD),
+                isDarkTheme ? const Color(0xFF1a1f3c) : const Color(0xFFE9FCFC),
             brightness: isDarkTheme ? Brightness.dark : Brightness.light,
           ),
       cardColor:
