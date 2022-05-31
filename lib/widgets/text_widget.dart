@@ -5,9 +5,9 @@ class TextWidget extends StatelessWidget {
     Key? key,
     required this.text,
     required this.color,
-    this.textSize = 16,
-    this.maxLines = 10,
+    required this.textSize,
     this.isTitle = false,
+    this.maxLines = 10,
   }) : super(key: key);
   final String text;
   final Color color;
@@ -20,10 +20,10 @@ class TextWidget extends StatelessWidget {
       text,
       maxLines: maxLines,
       style: TextStyle(
-          fontSize: textSize,
-          color: color,
           overflow: TextOverflow.ellipsis,
-          fontWeight: isTitle ? FontWeight.w600 : FontWeight.w400),
+          color: color,
+          fontSize: textSize,
+          fontWeight: isTitle ? FontWeight.bold : FontWeight.normal),
     );
   }
 }
