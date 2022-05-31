@@ -91,7 +91,7 @@ class WishlistWidget extends StatelessWidget {
                       height: 5,
                     ),
                     TextWidget(
-                      text: '\$${usedPrice.toStringAsFixed(2)}',
+                      text: '\XAFXAF{usedPrice.toStringAsFixed(2)}',
                       color: color,
                       textSize: 18.0,
                       maxLines: 1,

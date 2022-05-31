@@ -36,7 +36,7 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                 flex: size.width < 650 ? 3 : 1,
                 child: Image.network(
                   'https://www.lifepng.com/wp-content/uploads/2020/11/Apricot-Large-Single-png-hd.png',
-        
+
                   fit: BoxFit.fill,
                   // height: screenWidth * 0.15,
                   // width: screenWidth * 0.15,
@@ -52,7 +52,7 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     TextWidget(
-                      text: '12x For \$19.9',
+                      text: '12x For \XAF19.9',
                       color: color,
                       textSize: 16,
                       isTitle: true,
@@ -67,7 +67,7 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                             isTitle: true,
                           ),
                           TextWidget(
-                            text: '  Hadi K.',
+                            text: '  Daniel TheProgrammer',
                             color: color,
                             textSize: 14,
                             isTitle: true,
@@ -76,12 +76,11 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                       ),
                     ),
                     const Text(
-                      '20/03/2022',
+                      '20/05/2022',
                     )
                   ],
                 ),
               ),
-             
             ],
           ),
         ),

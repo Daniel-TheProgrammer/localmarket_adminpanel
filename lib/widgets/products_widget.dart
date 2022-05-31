@@ -70,7 +70,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                 Row(
                   children: [
                     TextWidget(
-                      text: '\$1.99',
+                      text: '\XAF1.99',
                       color: color,
                       textSize: 18,
                     ),
@@ -80,7 +80,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                     Visibility(
                         visible: true,
                         child: Text(
-                          '\$3.89',
+                          '\XAF3.89',
                           style: TextStyle(
                               decoration: TextDecoration.lineThrough,
                               color: color),
